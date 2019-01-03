@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="36dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <android.support.design.card.MaterialCardView
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="-14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:id="@+id/dragLayout"
+                    android:gravity="center"
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/imageView"
+                        android:tint="#d2d2d2"
+                        app:srcCompat="@drawable/ic_drag_handle_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/contentLayout"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@android:color/black"
+                        android:text="This is some text which will be visible when the user is viewing this screen. Am I writing really long? I don't know. This is some text which will be visible when the user is viewing this screen. Am I writing really long? I don't know. This is some text which will be visible when the user is viewing this screen. Am I writing really long? I don't know. This is some text which will be visible when the user is viewing this screen. Am I writing really long? I don't know. This is some text which will be visible when the user is viewing this screen.  Am I writing really long? I don't know. This is some text which will be visible when the user is viewing this screen. "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+</LinearLayout>
